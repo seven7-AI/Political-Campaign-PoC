@@ -1,0 +1,9 @@
+setup_project.ps1
+.env
+env/
+.dist/
+.idea/
+.vscode/
+*pycache*
+*.env
+*.env.local
