@@ -1,0 +1,14 @@
+fastapi
+uvicorn
+supabase
+asyncpg
+psycopg2-binary
+neo4j
+openai
+resend
+pypdf2
+python-dotenv
+langchain
+langchain-openai
+pydantic
+pydantic[email]

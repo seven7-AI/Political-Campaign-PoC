@@ -1,0 +1,2 @@
+2025-07-13 19:03:05,137 - services.auth_service - INFO - Supabase client initialized
+2025-07-13 19:03:06,151 - services.auth_service - INFO - OpenAI client initialized
