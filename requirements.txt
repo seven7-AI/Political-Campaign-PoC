@@ -12,3 +12,6 @@ langchain
 langchain-openai
 pydantic
 pydantic[email]
+python-multipart
+langchain-community
+websockets

@@ -5844,3 +5844,347 @@ gotrue.errors.AuthApiError: Email not confirmed
 2025-07-13 20:15:39,246 - app.services.auth_service - INFO - OpenAI client initialized
 2025-07-13 20:15:55,866 - app.services.auth_service - INFO - Supabase client initialized
 2025-07-13 20:15:56,799 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-13 20:16:00,777 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-13 20:16:01,573 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-13 20:16:02,288 - httpcore.connection - DEBUG - connect_tcp.started host='ktwemgwubqvnmmgrixdg.supabase.co' port=443 local_address=None timeout=5.0 socket_options=None
+2025-07-13 20:16:02,467 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000022857CD6270>
+2025-07-13 20:16:02,467 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000022857C16450> server_hostname='ktwemgwubqvnmmgrixdg.supabase.co' timeout=5.0
+2025-07-13 20:16:02,639 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000022857CAF110>
+2025-07-13 20:16:02,640 - httpcore.http2 - DEBUG - send_connection_init.started request=<Request [b'POST']>
+2025-07-13 20:16:02,641 - httpcore.http2 - DEBUG - send_connection_init.complete
+2025-07-13 20:16:02,642 - httpcore.http2 - DEBUG - send_request_headers.started request=<Request [b'POST']> stream_id=1
+2025-07-13 20:16:02,642 - hpack.hpack - DEBUG - Adding (b':method', b'POST') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:02,643 - hpack.hpack - DEBUG - Encoding 3 with 7 bits
+2025-07-13 20:16:02,643 - hpack.hpack - DEBUG - Adding (b':authority', b'ktwemgwubqvnmmgrixdg.supabase.co') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:02,643 - hpack.hpack - DEBUG - Encoding 1 with 6 bits
+2025-07-13 20:16:02,644 - hpack.hpack - DEBUG - Encoding 24 with 7 bits
+2025-07-13 20:16:02,644 - hpack.hpack - DEBUG - Adding (b':scheme', b'https') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:02,644 - hpack.hpack - DEBUG - Encoding 7 with 7 bits
+2025-07-13 20:16:02,644 - hpack.hpack - DEBUG - Adding (b':path', b'/auth/v1/signup') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:02,644 - hpack.hpack - DEBUG - Encoding 4 with 6 bits
+2025-07-13 20:16:02,645 - hpack.hpack - DEBUG - Encoding 11 with 7 bits
+2025-07-13 20:16:02,645 - hpack.hpack - DEBUG - Adding (b'accept', b'*/*') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:02,645 - hpack.hpack - DEBUG - Encoding 19 with 6 bits
+2025-07-13 20:16:02,645 - hpack.hpack - DEBUG - Encoding 3 with 7 bits
+2025-07-13 20:16:02,646 - hpack.hpack - DEBUG - Adding (b'accept-encoding', b'gzip, deflate, zstd') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:02,646 - hpack.hpack - DEBUG - Encoding 16 with 6 bits
+2025-07-13 20:16:02,646 - hpack.hpack - DEBUG - Encoding 15 with 7 bits
+2025-07-13 20:16:02,646 - hpack.hpack - DEBUG - Adding (b'user-agent', b'python-httpx/0.28.1') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:02,647 - hpack.hpack - DEBUG - Encoding 58 with 6 bits
+2025-07-13 20:16:02,647 - hpack.hpack - DEBUG - Encoding 14 with 7 bits
+2025-07-13 20:16:02,647 - hpack.hpack - DEBUG - Adding (b'x-client-info', b'supabase-py/2.16.0') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:02,647 - hpack.hpack - DEBUG - Encoding 10 with 7 bits
+2025-07-13 20:16:02,647 - hpack.hpack - DEBUG - Encoding 13 with 7 bits
+2025-07-13 20:16:02,648 - hpack.hpack - DEBUG - Adding (b'apikey', b'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt0d2VtZ3d1YnF2bm1tZ3JpeGRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIxMzQ5NTUsImV4cCI6MjA2NzcxMDk1NX0.CHxKFUjuIGo3aiPpvk6DCkv4itj1DteE6cuf9DrXX7c') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:02,648 - hpack.hpack - DEBUG - Encoding 5 with 7 bits
+2025-07-13 20:16:02,648 - hpack.hpack - DEBUG - Encoding 166 with 7 bits
+2025-07-13 20:16:02,649 - hpack.hpack - DEBUG - Adding (b'authorization', b'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt0d2VtZ3d1YnF2bm1tZ3JpeGRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIxMzQ5NTUsImV4cCI6MjA2NzcxMDk1NX0.CHxKFUjuIGo3aiPpvk6DCkv4itj1DteE6cuf9DrXX7c') to the header table, sensitive:True, huffman:True
+2025-07-13 20:16:02,649 - hpack.hpack - DEBUG - Encoding 23 with 4 bits
+2025-07-13 20:16:02,650 - hpack.hpack - DEBUG - Encoding 171 with 7 bits
+2025-07-13 20:16:02,650 - hpack.hpack - DEBUG - Adding (b'x-supabase-api-version', b'2024-01-01') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:02,650 - hpack.hpack - DEBUG - Encoding 16 with 7 bits
+2025-07-13 20:16:02,650 - hpack.hpack - DEBUG - Encoding 7 with 7 bits
+2025-07-13 20:16:02,650 - hpack.hpack - DEBUG - Adding (b'content-type', b'application/json;charset=UTF-8') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:02,651 - hpack.hpack - DEBUG - Encoding 31 with 6 bits
+2025-07-13 20:16:02,651 - hpack.hpack - DEBUG - Encoding 22 with 7 bits
+2025-07-13 20:16:02,651 - hpack.hpack - DEBUG - Adding (b'content-length', b'125') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:02,651 - hpack.hpack - DEBUG - Encoding 28 with 6 bits
+2025-07-13 20:16:02,651 - hpack.hpack - DEBUG - Encoding 2 with 7 bits
+2025-07-13 20:16:02,652 - hpack.hpack - DEBUG - Encoded header block to b"\x83A\x98\xea\x9f\x05\xa6o\x16\xc7\xdb\xbdT\xd35\x86\xf3$\xcb\xa2\xda\xc7\x18\xd0U\xc8\x7f\x87D\x8b`v\xa6v;\x85\x84\x1aj\xad\xafS\x83\xf9c\xe7P\x8f\x9b\xd9\xab\xfaRB\xcb@\xd2_\xa5=\xa12\x7fz\x8e\xaf\xd2g=KN\x94\xd7\xe5\x80.'\x97\x0f@\x8a\xf2\xb1(1jJ\xc6\xaaS\xff\x8dE\xb5\x8e1\xa0\xabW\xe9\x81.\x17\x17\x07@\x85\x1df\xea__\xff'/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x95ml\x97\xb29\x93\xad\x7f\x9coe}r\xfa\xcbY\x19\xd0mF\xcb\xeeO\xcb\xb3\xf3\xa7\x0f\xbf\xdd\xd9\x11\x92\xac\xb4~\x9b#\x99)H$\x17\x14\xfe\xb3 y\xd5\x84Q\xd2\x14\xfe\xb3\x96\xb2\xe2\xdbVCx1)}\x1f\xbb\xb29\x92\x9c6\xc6&\x8d\x9e\xf6Z\xf9\xfel6\xae\x98\x19\xd3\xbf'\x9d\x1e\xf67\xa7\x7f\x04d\xa7\x8bD\xbd\x91\xcd\x1d!\x16\x9fd\xf3\xa2\xffP\xe9\xfc\x02\xf7\xb1\xf9\xcd\x87\x87Krb;#6\xba\xfb\xf5r\xfd\xee\xbd\xda2z\x06\xfaK\x81\xc2[+\xf7\xec\xfc\xfct\x9f\x1f\x08\xff,\xbaQ\xd8[\x14/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x95ml\x97\xb29\x93\xad\x7f\x9coe}r\xfa\xcbY\x19\xd0mF\xcb\xeeO\xcb\xb3\xf3\xa7\x0f\xbf\xdd\xd9\x11\x92\xac\xb4~\x9b#\x99)H$\x17\x14\xfe\xb3 y\xd5\x84Q\xd2\x14\xfe\xb3\x96\xb2\xe2\xdbVCx1)}\x1f\xbb\xb29\x92\x9c6\xc6&\x8d\x9e\xf6Z\xf9\xfel6\xae\x98\x19\xd3\xbf'\x9d\x1e\xf67\xa7\x7f\x04d\xa7\x8bD\xbd\x91\xcd\x1d!\x16\x9fd\xf3\xa2\xffP\xe9\xfc\x02\xf7\xb1\xf9\xcd\x87\x87Krb;#6\xba\xfb\xf5r\xfd\xee\xbd\xda2z\x06\xfaK\x81\xc2[+\xf7\xec\xfc\xfct\x9f@\x90\xf2\xb2-\xacq\x8d\x05Xu\x99n\xe5\xb1\x06=_\x87\x10\x04\xd2\xc0\n\xc0\x0f_\x96\x1du\xd0b\r&=LtA\xea\xfb$\xe3\xb1\x05L\x1c7\xe1Y\xef\\\x82\x08\x9b"
+2025-07-13 20:16:02,653 - httpcore.http2 - DEBUG - send_request_headers.complete
+2025-07-13 20:16:02,654 - httpcore.http2 - DEBUG - send_request_body.started request=<Request [b'POST']> stream_id=1
+2025-07-13 20:16:02,654 - httpcore.http2 - DEBUG - send_request_body.complete
+2025-07-13 20:16:02,655 - httpcore.http2 - DEBUG - receive_response_headers.started request=<Request [b'POST']> stream_id=1
+2025-07-13 20:16:02,752 - httpcore.http2 - DEBUG - receive_remote_settings.started
+2025-07-13 20:16:02,752 - httpcore.http2 - DEBUG - receive_remote_settings.complete return_value=<RemoteSettingsChanged changed_settings:{ChangedSetting(setting=3, original_value=None, new_value=100), ChangedSetting(setting=4, original_value=65535, new_value=65536), ChangedSetting(setting=5, original_value=16384, new_value=16777215)}>
+2025-07-13 20:16:04,588 - hpack.hpack - DEBUG - Decoding b'?\xe1\x1f\x88a\x96\xddm_J\x05\x952\xdbB\x82\x00\x9bP.\xdc\x0b\x97\x00\xd2\x98\xb4o_\x8b\x1du\xd0b\r&=LtA\xea@\x85$\xabX?_\x8f}\xb2\x8d\xc9\x00\xd8\xa4q\xe7Y\x90\x8be\xd3w@\x8a$\xab\x10d\x9c\xab!#M\xa8\x86\xbf\xcfL:2^Z\x83\x9b\xd9\xabx\xa0\xa4~V\x1c\xc5\x81\x90\xb6\xcb\x80\x00>\xd45D\xa2\xd9\x0b\xba\xd8\xef\x9e\x91\x9a\xa4}\xa9]\x85\xa0\xe3\x93{\x91\xd5a\xa65_JBB\x16\xb4\xad\x82\xa2\x1eCU7@\x8dDkL4\x97\xc0\xfd-\xdc\xb6 \xc7\xab\x011@\x8aDkWa\xfa\x14\x89Z\xc2\xcb\x90\xea\x9f\x05\xa6o\x16\xc7\xdb\xbdT\xd35\x86\xf3$\xdf@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x8f\xf2\xb1j\xee\x7fK\r)-5\xa5b\x1e\xda\x93\x011@\x95\xf2\xb1j\xee\x7fK[Z\x13aGJ\xc8-\x9d\xccB\xac\x93R_\x83\x08\x9esw\xfff\x8a"K\x14t\xc0\xbeo\xdeu5"\xf6^\x07\xe6Ts\x1e\x96\x97&\xce\xb4\xd4=\xe0\xcd/\xaeSa\x8bB\x17\xa7|\xd8\xb3\xe0X.\xb6&\x84\xe3\xee4\xb0W\x02\xe1\\+\x07\x83\xb7Pl\x0b\xc5\xbf\xc7/M\xb6H\xf0\xe5\x7f\xf7G\xe6\x1b\xb3p\xd7\xd1\xbcZ\xbb\x1f\x8d>\xda\xcag[i0\xfe\xf8\xf4.\xc9p\xbd\x90\\p\xef\xa5\x03\xe9\x91\x9d\x19\xb8t\x0e\x19\x1cO\xe7z1f\xcf\x1cF1\x93\xe9\xf1a\xed\\\xbb\x81\xab\x8c|w\x96\x1dT[\xdas\xddOW\xc3\xba\xfe\x90\xdag\xf1G\xce\xfd\x0b\xfe\xf1\xfbR\xb1\xa6x\x18\xfbP\xbek5\x85D\x1b\xad\xab\xe9@\xb2\xb6[hXM\xa8\x17n4\xe5\xc04\xa6-\x1b\xfe\xd4\x90\xf4\x8c\xd5@\xba-\xacq\x8d\x05\\\x87\xfbS\x1aS^\xaa\xa8\xf5\xf6\xa6\xe2\x92\xdb\x0b\xf6\xa6\xe1\xd2]\xc6I`\xd2z\x8bv\x87%\x07\xb6Ih\x1d\x85@\x85\x1d\tY\x1d\xc9\x90\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x81\xe7\x1a\x00?'
+2025-07-13 20:16:04,589 - hpack.hpack - DEBUG - Decoded 4096, consumed 3 bytes
+2025-07-13 20:16:04,590 - hpack.table - DEBUG - Resizing header table to 4096 from 4096
+2025-07-13 20:16:04,590 - hpack.hpack - DEBUG - Decoded 8, consumed 1 bytes
+2025-07-13 20:16:04,590 - hpack.hpack - DEBUG - Decoded (b':status', b'200'), consumed 1
+2025-07-13 20:16:04,590 - hpack.hpack - DEBUG - Decoded 33, consumed 1 bytes
+2025-07-13 20:16:04,591 - hpack.hpack - DEBUG - Decoded 22, consumed 1 bytes
+2025-07-13 20:16:04,591 - hpack.hpack - DEBUG - Decoded (b'date', b'Sun, 13 Jul 2025 17:16:04 GMT'), total consumed 24 bytes, indexed True
+2025-07-13 20:16:04,591 - hpack.hpack - DEBUG - Decoded 31, consumed 1 bytes
+2025-07-13 20:16:04,591 - hpack.hpack - DEBUG - Decoded 11, consumed 1 bytes
+2025-07-13 20:16:04,591 - hpack.hpack - DEBUG - Decoded (b'content-type', b'application/json'), total consumed 13 bytes, indexed True
+2025-07-13 20:16:04,592 - hpack.hpack - DEBUG - Decoded 5, consumed 1 bytes
+2025-07-13 20:16:04,592 - hpack.hpack - DEBUG - Decoded 15, consumed 1 bytes
+2025-07-13 20:16:04,592 - hpack.hpack - DEBUG - Decoded (b'cf-ray', b'95ea6d052d6873dc-JNB'), total consumed 23 bytes, indexed True
+2025-07-13 20:16:04,592 - hpack.hpack - DEBUG - Decoded 10, consumed 1 bytes
+2025-07-13 20:16:04,592 - hpack.hpack - DEBUG - Decoded 6, consumed 1 bytes
+2025-07-13 20:16:04,593 - hpack.hpack - DEBUG - Decoded (b'cf-cache-status', b'DYNAMIC'), total consumed 19 bytes, indexed True
+2025-07-13 20:16:04,593 - hpack.hpack - DEBUG - Decoded 26, consumed 1 bytes
+2025-07-13 20:16:04,593 - hpack.hpack - DEBUG - Decoded 3, consumed 1 bytes
+2025-07-13 20:16:04,593 - hpack.hpack - DEBUG - Decoded (b'content-encoding', b'gzip'), total consumed 5 bytes, indexed True
+2025-07-13 20:16:04,593 - hpack.hpack - DEBUG - Decoded 56, consumed 1 bytes
+2025-07-13 20:16:04,594 - hpack.hpack - DEBUG - Decoded 32, consumed 1 bytes
+2025-07-13 20:16:04,594 - hpack.hpack - DEBUG - Decoded (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), total consumed 34 bytes, indexed True
+2025-07-13 20:16:04,594 - hpack.hpack - DEBUG - Decoded 59, consumed 1 bytes
+2025-07-13 20:16:04,594 - hpack.hpack - DEBUG - Decoded 17, consumed 1 bytes
+2025-07-13 20:16:04,594 - hpack.hpack - DEBUG - Decoded (b'vary', b'Origin, Accept-Encoding'), total consumed 19 bytes, indexed True
+2025-07-13 20:16:04,595 - hpack.hpack - DEBUG - Decoded 13, consumed 1 bytes
+2025-07-13 20:16:04,595 - hpack.hpack - DEBUG - Decoded 1, consumed 1 bytes
+2025-07-13 20:16:04,595 - hpack.hpack - DEBUG - Decoded (b'sb-gateway-version', <memory at 0x0000022857AD77C0>), total consumed 17 bytes, indexed True
+2025-07-13 20:16:04,595 - hpack.hpack - DEBUG - Decoded 10, consumed 1 bytes
+2025-07-13 20:16:04,596 - hpack.hpack - DEBUG - Decoded 16, consumed 1 bytes
+2025-07-13 20:16:04,596 - hpack.hpack - DEBUG - Decoded (b'sb-project-ref', b'ktwemgwubqvnmmgrixdg'), total consumed 29 bytes, indexed True
+2025-07-13 20:16:04,596 - hpack.hpack - DEBUG - Decoded 16, consumed 1 bytes
+2025-07-13 20:16:04,596 - hpack.hpack - DEBUG - Decoded 5, consumed 1 bytes
+2025-07-13 20:16:04,596 - hpack.hpack - DEBUG - Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+2025-07-13 20:16:04,597 - hpack.hpack - DEBUG - Decoded 15, consumed 1 bytes
+2025-07-13 20:16:04,597 - hpack.hpack - DEBUG - Decoded 1, consumed 1 bytes
+2025-07-13 20:16:04,597 - hpack.hpack - DEBUG - Decoded (b'x-envoy-attempt-count', <memory at 0x0000022857AD7880>), total consumed 19 bytes, indexed True
+2025-07-13 20:16:04,597 - hpack.hpack - DEBUG - Decoded 21, consumed 1 bytes
+2025-07-13 20:16:04,597 - hpack.hpack - DEBUG - Decoded 3, consumed 1 bytes
+2025-07-13 20:16:04,598 - hpack.hpack - DEBUG - Decoded (b'x-envoy-upstream-service-time', b'1286'), total consumed 27 bytes, indexed True
+2025-07-13 20:16:04,598 - hpack.hpack - DEBUG - Decoded 55, consumed 1 bytes
+2025-07-13 20:16:04,598 - hpack.hpack - DEBUG - Decoded 229, consumed 2 bytes
+2025-07-13 20:16:04,598 - hpack.hpack - DEBUG - Decoded (b'set-cookie', b'__cf_bm=.KZYn4d.rC0XJsYaN4.cQkmnaT0KfyWgF_Ms.mTgGLE-1752426964-1.0.1.1-1U7BsiE._TwWy55cbFJ9ZMXFBgUPj5GOqoVmz4Ji754tAZwy2qt6eqseHATmsajI3MKUj1Fd6tXvlGKLb_iiity92FqpfS0OVbVTeAOluqhoBtk91SDN1ui9GbYDl.ZV; path=/; expires=Sun, 13-Jul-25 17:46:04 GMT; domain=.supabase.co; HttpOnly; Secure; SameSite=None'), total consumed 232 bytes, indexed True
+2025-07-13 20:16:04,599 - hpack.hpack - DEBUG - Decoded 54, consumed 1 bytes
+2025-07-13 20:16:04,599 - hpack.hpack - DEBUG - Decoded 7, consumed 1 bytes
+2025-07-13 20:16:04,599 - hpack.hpack - DEBUG - Decoded (b'server', b'cloudflare'), total consumed 9 bytes, indexed True
+2025-07-13 20:16:04,599 - hpack.hpack - DEBUG - Decoded 5, consumed 1 bytes
+2025-07-13 20:16:04,599 - hpack.hpack - DEBUG - Decoded 16, consumed 1 bytes
+2025-07-13 20:16:04,600 - hpack.hpack - DEBUG - Decoded (b'alt-svc', b'h3=":443"; ma=86400'), total consumed 24 bytes, indexed True
+2025-07-13 20:16:04,600 - httpcore.http2 - DEBUG - receive_response_headers.complete return_value=(200, [(b'date', b'Sun, 13 Jul 2025 17:16:04 GMT'), (b'content-type', b'application/json'), (b'cf-ray', b'95ea6d052d6873dc-JNB'), (b'cf-cache-status', b'DYNAMIC'), (b'content-encoding', b'gzip'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'vary', b'Origin, Accept-Encoding'), (b'sb-gateway-version', b'1'), (b'sb-project-ref', b'ktwemgwubqvnmmgrixdg'), (b'x-content-type-options', b'nosniff'), (b'x-envoy-attempt-count', b'1'), (b'x-envoy-upstream-service-time', b'1286'), (b'set-cookie', b'__cf_bm=.KZYn4d.rC0XJsYaN4.cQkmnaT0KfyWgF_Ms.mTgGLE-1752426964-1.0.1.1-1U7BsiE._TwWy55cbFJ9ZMXFBgUPj5GOqoVmz4Ji754tAZwy2qt6eqseHATmsajI3MKUj1Fd6tXvlGKLb_iiity92FqpfS0OVbVTeAOluqhoBtk91SDN1ui9GbYDl.ZV; path=/; expires=Sun, 13-Jul-25 17:46:04 GMT; domain=.supabase.co; HttpOnly; Secure; SameSite=None'), (b'server', b'cloudflare'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-07-13 20:16:04,602 - httpx - INFO - HTTP Request: POST https://ktwemgwubqvnmmgrixdg.supabase.co/auth/v1/signup "HTTP/2 200 OK"
+2025-07-13 20:16:04,602 - httpcore.http2 - DEBUG - receive_response_body.started request=<Request [b'POST']> stream_id=1
+2025-07-13 20:16:04,603 - httpcore.http2 - DEBUG - receive_response_body.complete
+2025-07-13 20:16:04,604 - httpcore.http2 - DEBUG - response_closed.started stream_id=1
+2025-07-13 20:16:04,604 - httpcore.http2 - DEBUG - response_closed.complete
+2025-07-13 20:16:04,604 - app.services.auth_service - DEBUG - Supabase sign-up response: user=User(id='9a2797bb-83e0-46cf-b77d-6d9458497f35', app_metadata={'provider': 'email', 'providers': ['email']}, user_metadata={'email': 'arapbiisubmissions3@gmail.com', 'email_verified': False, 'phone_verified': False, 'sub': '9a2797bb-83e0-46cf-b77d-6d9458497f35'}, aud='authenticated', confirmation_sent_at=datetime.datetime(2025, 7, 13, 17, 16, 3, 283790, tzinfo=TzInfo(UTC)), recovery_sent_at=None, email_change_sent_at=None, new_email=None, new_phone=None, invited_at=None, action_link=None, email='arapbiisubmissions3@gmail.com', phone='', created_at=datetime.datetime(2025, 7, 13, 17, 16, 3, 276352, tzinfo=TzInfo(UTC)), confirmed_at=None, email_confirmed_at=None, phone_confirmed_at=None, last_sign_in_at=None, role='authenticated', updated_at=datetime.datetime(2025, 7, 13, 17, 16, 4, 469469, tzinfo=TzInfo(UTC)), identities=[UserIdentity(id='9a2797bb-83e0-46cf-b77d-6d9458497f35', identity_id='93e4b646-688c-4f7c-a212-dc10b2977bc1', user_id='9a2797bb-83e0-46cf-b77d-6d9458497f35', identity_data={'email': 'arapbiisubmissions3@gmail.com', 'email_verified': False, 'phone_verified': False, 'sub': '9a2797bb-83e0-46cf-b77d-6d9458497f35'}, provider='email', created_at=datetime.datetime(2025, 7, 13, 17, 16, 3, 280247, tzinfo=TzInfo(UTC)), last_sign_in_at=datetime.datetime(2025, 7, 13, 17, 16, 3, 280197, tzinfo=TzInfo(UTC)), updated_at=datetime.datetime(2025, 7, 13, 17, 16, 3, 280247, tzinfo=TzInfo(UTC)))], is_anonymous=False, factors=None) session=None
+2025-07-13 20:16:04,606 - app.services.auth_service - INFO - User registered: arapbiisubmissions3@gmail.com, ID: 9a2797bb-83e0-46cf-b77d-6d9458497f35
+2025-07-13 20:16:05,430 - httpcore.connection - DEBUG - connect_tcp.started host='ktwemgwubqvnmmgrixdg.supabase.co' port=443 local_address=None timeout=120 socket_options=None
+2025-07-13 20:16:05,570 - httpcore.connection - DEBUG - connect_tcp.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000022857E58F50>
+2025-07-13 20:16:05,570 - httpcore.connection - DEBUG - start_tls.started ssl_context=<ssl.SSLContext object at 0x0000022857C169F0> server_hostname='ktwemgwubqvnmmgrixdg.supabase.co' timeout=120
+2025-07-13 20:16:05,694 - httpcore.connection - DEBUG - start_tls.complete return_value=<httpcore._backends.sync.SyncStream object at 0x0000022857E4C8A0>
+2025-07-13 20:16:05,695 - httpcore.http2 - DEBUG - send_connection_init.started request=<Request [b'POST']>
+2025-07-13 20:16:05,695 - httpcore.http2 - DEBUG - send_connection_init.complete
+2025-07-13 20:16:05,696 - httpcore.http2 - DEBUG - send_request_headers.started request=<Request [b'POST']> stream_id=1
+2025-07-13 20:16:05,696 - hpack.hpack - DEBUG - Adding (b':method', b'POST') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:05,697 - hpack.hpack - DEBUG - Encoding 3 with 7 bits
+2025-07-13 20:16:05,697 - hpack.hpack - DEBUG - Adding (b':authority', b'ktwemgwubqvnmmgrixdg.supabase.co') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:05,697 - hpack.hpack - DEBUG - Encoding 1 with 6 bits
+2025-07-13 20:16:05,697 - hpack.hpack - DEBUG - Encoding 24 with 7 bits
+2025-07-13 20:16:05,698 - hpack.hpack - DEBUG - Adding (b':scheme', b'https') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:05,698 - hpack.hpack - DEBUG - Encoding 7 with 7 bits
+2025-07-13 20:16:05,698 - hpack.hpack - DEBUG - Adding (b':path', b'/rest/v1/profiles') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:05,698 - hpack.hpack - DEBUG - Encoding 4 with 6 bits
+2025-07-13 20:16:05,698 - hpack.hpack - DEBUG - Encoding 12 with 7 bits
+2025-07-13 20:16:05,699 - hpack.hpack - DEBUG - Adding (b'accept', b'*/*') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:05,699 - hpack.hpack - DEBUG - Encoding 19 with 6 bits
+2025-07-13 20:16:05,699 - hpack.hpack - DEBUG - Encoding 3 with 7 bits
+2025-07-13 20:16:05,699 - hpack.hpack - DEBUG - Adding (b'accept-encoding', b'gzip, deflate, zstd') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:05,699 - hpack.hpack - DEBUG - Encoding 16 with 6 bits
+2025-07-13 20:16:05,700 - hpack.hpack - DEBUG - Encoding 15 with 7 bits
+2025-07-13 20:16:05,700 - hpack.hpack - DEBUG - Adding (b'user-agent', b'python-httpx/0.28.1') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:05,700 - hpack.hpack - DEBUG - Encoding 58 with 6 bits
+2025-07-13 20:16:05,700 - hpack.hpack - DEBUG - Encoding 14 with 7 bits
+2025-07-13 20:16:05,700 - hpack.hpack - DEBUG - Adding (b'x-client-info', b'supabase-py/2.16.0') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:05,701 - hpack.hpack - DEBUG - Encoding 10 with 7 bits
+2025-07-13 20:16:05,701 - hpack.hpack - DEBUG - Encoding 13 with 7 bits
+2025-07-13 20:16:05,701 - hpack.hpack - DEBUG - Adding (b'apikey', b'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt0d2VtZ3d1YnF2bm1tZ3JpeGRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIxMzQ5NTUsImV4cCI6MjA2NzcxMDk1NX0.CHxKFUjuIGo3aiPpvk6DCkv4itj1DteE6cuf9DrXX7c') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:05,702 - hpack.hpack - DEBUG - Encoding 5 with 7 bits
+2025-07-13 20:16:05,702 - hpack.hpack - DEBUG - Encoding 166 with 7 bits
+2025-07-13 20:16:05,702 - hpack.hpack - DEBUG - Adding (b'authorization', b'Bearer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Imt0d2VtZ3d1YnF2bm1tZ3JpeGRnIiwicm9sZSI6ImFub24iLCJpYXQiOjE3NTIxMzQ5NTUsImV4cCI6MjA2NzcxMDk1NX0.CHxKFUjuIGo3aiPpvk6DCkv4itj1DteE6cuf9DrXX7c') to the header table, sensitive:True, huffman:True
+2025-07-13 20:16:05,702 - hpack.hpack - DEBUG - Encoding 23 with 4 bits
+2025-07-13 20:16:05,703 - hpack.hpack - DEBUG - Encoding 171 with 7 bits
+2025-07-13 20:16:05,703 - hpack.hpack - DEBUG - Adding (b'accept-profile', b'public') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:05,703 - hpack.hpack - DEBUG - Encoding 10 with 7 bits
+2025-07-13 20:16:05,703 - hpack.hpack - DEBUG - Encoding 5 with 7 bits
+2025-07-13 20:16:05,704 - hpack.hpack - DEBUG - Adding (b'content-profile', b'public') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:05,704 - hpack.hpack - DEBUG - Encoding 11 with 7 bits
+2025-07-13 20:16:05,704 - hpack.hpack - DEBUG - Encoding 5 with 7 bits
+2025-07-13 20:16:05,704 - hpack.hpack - DEBUG - Adding (b'prefer', b'return=representation') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:05,704 - hpack.hpack - DEBUG - Encoding 5 with 7 bits
+2025-07-13 20:16:05,705 - hpack.hpack - DEBUG - Encoding 15 with 7 bits
+2025-07-13 20:16:05,705 - hpack.hpack - DEBUG - Adding (b'content-length', b'131') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:05,705 - hpack.hpack - DEBUG - Encoding 28 with 6 bits
+2025-07-13 20:16:05,705 - hpack.hpack - DEBUG - Encoding 2 with 7 bits
+2025-07-13 20:16:05,706 - hpack.hpack - DEBUG - Adding (b'content-type', b'application/json') to the header table, sensitive:False, huffman:True
+2025-07-13 20:16:05,706 - hpack.hpack - DEBUG - Encoding 31 with 6 bits
+2025-07-13 20:16:05,706 - hpack.hpack - DEBUG - Encoding 11 with 7 bits
+2025-07-13 20:16:05,706 - hpack.hpack - DEBUG - Encoded header block to b"\x83A\x98\xea\x9f\x05\xa6o\x16\xc7\xdb\xbdT\xd35\x86\xf3$\xcb\xa2\xda\xc7\x18\xd0U\xc8\x7f\x87D\x8cb\xc2\xa1,w\x0b\x15\xd8yMAQS\x83\xf9c\xe7P\x8f\x9b\xd9\xab\xfaRB\xcb@\xd2_\xa5=\xa12\x7fz\x8e\xaf\xd2g=KN\x94\xd7\xe5\x80.'\x97\x0f@\x8a\xf2\xb1(1jJ\xc6\xaaS\xff\x8dE\xb5\x8e1\xa0\xabW\xe9\x81.\x17\x17\x07@\x85\x1df\xea__\xff'/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x95ml\x97\xb29\x93\xad\x7f\x9coe}r\xfa\xcbY\x19\xd0mF\xcb\xeeO\xcb\xb3\xf3\xa7\x0f\xbf\xdd\xd9\x11\x92\xac\xb4~\x9b#\x99)H$\x17\x14\xfe\xb3 y\xd5\x84Q\xd2\x14\xfe\xb3\x96\xb2\xe2\xdbVCx1)}\x1f\xbb\xb29\x92\x9c6\xc6&\x8d\x9e\xf6Z\xf9\xfel6\xae\x98\x19\xd3\xbf'\x9d\x1e\xf67\xa7\x7f\x04d\xa7\x8bD\xbd\x91\xcd\x1d!\x16\x9fd\xf3\xa2\xffP\xe9\xfc\x02\xf7\xb1\xf9\xcd\x87\x87Krb;#6\xba\xfb\xf5r\xfd\xee\xbd\xda2z\x06\xfaK\x81\xc2[+\xf7\xec\xfc\xfct\x9f\x1f\x08\xff,\xbaQ\xd8[\x14/\xac\xb3\xc7\x88\x86\xd4l\xb98{\xc8\x1d&\xc8\x8c\x95ml\x97\xb29\x93\xad\x7f\x9coe}r\xfa\xcbY\x19\xd0mF\xcb\xeeO\xcb\xb3\xf3\xa7\x0f\xbf\xdd\xd9\x11\x92\xac\xb4~\x9b#\x99)H$\x17\x14\xfe\xb3 y\xd5\x84Q\xd2\x14\xfe\xb3\x96\xb2\xe2\xdbVCx1)}\x1f\xbb\xb29\x92\x9c6\xc6&\x8d\x9e\xf6Z\xf9\xfel6\xae\x98\x19\xd3\xbf'\x9d\x1e\xf67\xa7\x7f\x04d\xa7\x8bD\xbd\x91\xcd\x1d!\x16\x9fd\xf3\xa2\xffP\xe9\xfc\x02\xf7\xb1\xf9\xcd\x87\x87Krb;#6\xba\xfb\xf5r\xfd\xee\xbd\xda2z\x06\xfaK\x81\xc2[+\xf7\xec\xfc\xfct\x9f@\x8a\x19\x08Z\xd2\xb5v\x1eSP_\x85\xae\xd8\xe81?@\x8b!\xeaIjJ\xd5\xd8yMA\x7f\x85\xae\xd8\xe81?@\x85\xae\xc2\xca[?\x8f\xb0\xa9\xb6\xca\xa0\xb0\xb5\xd8T\x16\xa4\x8d&=_\\\x82\x0b!_\x8b\x1du\xd0b\r&=LtA\xea"
+2025-07-13 20:16:05,707 - httpcore.http2 - DEBUG - send_request_headers.complete
+2025-07-13 20:16:05,708 - httpcore.http2 - DEBUG - send_request_body.started request=<Request [b'POST']> stream_id=1
+2025-07-13 20:16:05,708 - httpcore.http2 - DEBUG - send_request_body.complete
+2025-07-13 20:16:05,708 - httpcore.http2 - DEBUG - receive_response_headers.started request=<Request [b'POST']> stream_id=1
+2025-07-13 20:16:05,816 - httpcore.http2 - DEBUG - receive_remote_settings.started
+2025-07-13 20:16:05,816 - httpcore.http2 - DEBUG - receive_remote_settings.complete return_value=<RemoteSettingsChanged changed_settings:{ChangedSetting(setting=3, original_value=None, new_value=100), ChangedSetting(setting=4, original_value=65535, new_value=65536), ChangedSetting(setting=5, original_value=16384, new_value=16777215)}>
+2025-07-13 20:16:06,079 - hpack.hpack - DEBUG - Decoding b'?\xe1\x1fN\x82\x10\x03a\x96\xddm_J\x05\x952\xdbB\x82\x00\x9bP.\xdc\x0b\x97\x00\xe2\x98\xb4o_\x96\x1du\xd0b\r&=LtA\xea\xfbP\x93\x8e\xc4\x150Z\x99V{^\x03*/*@\x85$\xabX?_\x8f}\xb2\x8d\xc9\x02\xf3O\x94.\xb26\xd6\xcb\xa6\xef@\x8a$\xab\x10d\x9c\xab!#M\xa8\x86\xbf\xcfL:2^Z\x83\x9b\xd9\xabx\xa0\xa4~V\x1c\xc5\x81\x90\xb6\xcb\x80\x00>\xd45D\xa2\xd9\x0b\xba\xd8\xef\x9e\x91\x9a\xa4}\xa9]\x85\xa0\xe3\x93{\x8b\x84\x84-i[\x05D<\x86\xaao@\x8b!\xeaIjJ\xd5\xd8yMA\x7f\x85\xae\xd8\xe81?@\x8d\xae\xc2\xca[\x0bQ\n\xb0\xeb\xae\x83\x16O\x8f\xb0\xa9\xb6\xca\xa0\xb0\xb5\xd8T\x16\xa4\x8d&=_@\x8dDkL4\x97\xc0\xfd-\xdc\xb6 \xc7\xab\x011@\x8aDkWa\xfa\x14\x89Z\xc2\xcb\x90\xea\x9f\x05\xa6o\x16\xc7\xdb\xbdT\xd35\x86\xf3$\xdf@\x90\xf2\xb1\x0fRKRVO\xaa\xca\xb1\xebI\x8fR?\x85\xa8\xe8\xa8\xd2\xcb@\x8f\xf2\xb1j\xee\x7fK\r)-5\xa5b\x1e\xda\x93\x011@\x95\xf2\xb1j\xee\x7fK[Z\x13aGJ\xc8-\x9d\xccB\xac\x93R_\x0230w\xffX\x8a"K\x14t\xc1\x9d\x1bG\xb2\xfb\x93]\xd3\x1e\x82o=\xde\xf3\xe7\xd4\x07G\xed\xb2\x9foZ\xb1\xd5\x16\xe6\\\x91\xbd\x12`o\x9a\xc1u\xb14\'\x1fq\xc5\x82\xb8\x17\n\xe1Y\x7f^\x89\xa7\xf0\xb0\xed\x89\xcc;h\xd3\x80\xdea\xda\x0c\xdd\xb3Y\xfb\x1e\xef\xde[,:$\xc7\xc3\xbe\x96C\xde\xed\xe1\xc3n=\xfc\xfbv\x8a\xe9\xf8Q\x93>\xbc\x86\xdd\xa6\xdaQ\xcf_B\xd1\xef\xf0\x17\xb5{\xb2.6dg\x16\x88}h\xcd\xdaq\xd9\xe6\xde\xad#\x13\x97\xa2\xd5\x17\xad\x1fjV4\xcf\x03\x1fj\x17\xcdf\xb0\xa8\x83u\xb5}(\x16V\xcbm\x0b\t\xb5\x02\xed\xc6\x9c\xb8\x07\x14\xc5\xa3\x7f\xda\x92\x1e\x91\x9a\xa8\x17E\xb5\x8e1\xa0\xab\x90\xffjcJk\xd5U\x1e\xbe\xd4\xdcR[a~\xd4\xdc:K\xb8\xc9,\x1aOQ\x7fv\x87%\x07\xb6Ih\x1d\x85@\x85\x1d\tY\x1d\xc9\x90\x9d\x98?\x9b\x8d4\xcf\xf3\xf6\xa5#\x81\xe7\x1a\x00?'
+2025-07-13 20:16:06,081 - hpack.hpack - DEBUG - Decoded 4096, consumed 3 bytes
+2025-07-13 20:16:06,081 - hpack.table - DEBUG - Resizing header table to 4096 from 4096
+2025-07-13 20:16:06,081 - hpack.hpack - DEBUG - Decoded 14, consumed 1 bytes
+2025-07-13 20:16:06,081 - hpack.hpack - DEBUG - Decoded 2, consumed 1 bytes
+2025-07-13 20:16:06,081 - hpack.hpack - DEBUG - Decoded (b':status', b'201'), total consumed 4 bytes, indexed True
+2025-07-13 20:16:06,082 - hpack.hpack - DEBUG - Decoded 33, consumed 1 bytes
+2025-07-13 20:16:06,082 - hpack.hpack - DEBUG - Decoded 22, consumed 1 bytes
+2025-07-13 20:16:06,082 - hpack.hpack - DEBUG - Decoded (b'date', b'Sun, 13 Jul 2025 17:16:06 GMT'), total consumed 24 bytes, indexed True
+2025-07-13 20:16:06,082 - hpack.hpack - DEBUG - Decoded 31, consumed 1 bytes
+2025-07-13 20:16:06,082 - hpack.hpack - DEBUG - Decoded 22, consumed 1 bytes
+2025-07-13 20:16:06,083 - hpack.hpack - DEBUG - Decoded (b'content-type', b'application/json; charset=utf-8'), total consumed 24 bytes, indexed True
+2025-07-13 20:16:06,083 - hpack.hpack - DEBUG - Decoded 30, consumed 1 bytes
+2025-07-13 20:16:06,083 - hpack.hpack - DEBUG - Decoded 3, consumed 1 bytes
+2025-07-13 20:16:06,083 - hpack.hpack - DEBUG - Decoded (b'content-range', <memory at 0x0000022857AD7D00>), total consumed 5 bytes, indexed True
+2025-07-13 20:16:06,083 - hpack.hpack - DEBUG - Decoded 5, consumed 1 bytes
+2025-07-13 20:16:06,084 - hpack.hpack - DEBUG - Decoded 15, consumed 1 bytes
+2025-07-13 20:16:06,084 - hpack.hpack - DEBUG - Decoded (b'cf-ray', b'95ea6d1849e173a5-JNB'), total consumed 23 bytes, indexed True
+2025-07-13 20:16:06,084 - hpack.hpack - DEBUG - Decoded 10, consumed 1 bytes
+2025-07-13 20:16:06,084 - hpack.hpack - DEBUG - Decoded 6, consumed 1 bytes
+2025-07-13 20:16:06,084 - hpack.hpack - DEBUG - Decoded (b'cf-cache-status', b'DYNAMIC'), total consumed 19 bytes, indexed True
+2025-07-13 20:16:06,085 - hpack.hpack - DEBUG - Decoded 26, consumed 1 bytes
+2025-07-13 20:16:06,085 - hpack.hpack - DEBUG - Decoded 3, consumed 1 bytes
+2025-07-13 20:16:06,085 - hpack.hpack - DEBUG - Decoded (b'content-encoding', b'gzip'), total consumed 5 bytes, indexed True
+2025-07-13 20:16:06,086 - hpack.hpack - DEBUG - Decoded 56, consumed 1 bytes
+2025-07-13 20:16:06,086 - hpack.hpack - DEBUG - Decoded 32, consumed 1 bytes
+2025-07-13 20:16:06,086 - hpack.hpack - DEBUG - Decoded (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), total consumed 34 bytes, indexed True
+2025-07-13 20:16:06,086 - hpack.hpack - DEBUG - Decoded 59, consumed 1 bytes
+2025-07-13 20:16:06,086 - hpack.hpack - DEBUG - Decoded 11, consumed 1 bytes
+2025-07-13 20:16:06,087 - hpack.hpack - DEBUG - Decoded (b'vary', b'Accept-Encoding'), total consumed 13 bytes, indexed True
+2025-07-13 20:16:06,087 - hpack.hpack - DEBUG - Decoded 11, consumed 1 bytes
+2025-07-13 20:16:06,087 - hpack.hpack - DEBUG - Decoded 5, consumed 1 bytes
+2025-07-13 20:16:06,087 - hpack.hpack - DEBUG - Decoded (b'content-profile', b'public'), total consumed 19 bytes, indexed True
+2025-07-13 20:16:06,087 - hpack.hpack - DEBUG - Decoded 13, consumed 1 bytes
+2025-07-13 20:16:06,088 - hpack.hpack - DEBUG - Decoded 15, consumed 1 bytes
+2025-07-13 20:16:06,088 - hpack.hpack - DEBUG - Decoded (b'preference-applied', b'return=representation'), total consumed 31 bytes, indexed True
+2025-07-13 20:16:06,088 - hpack.hpack - DEBUG - Decoded 13, consumed 1 bytes
+2025-07-13 20:16:06,088 - hpack.hpack - DEBUG - Decoded 1, consumed 1 bytes
+2025-07-13 20:16:06,089 - hpack.hpack - DEBUG - Decoded (b'sb-gateway-version', <memory at 0x0000022857AD7700>), total consumed 17 bytes, indexed True
+2025-07-13 20:16:06,089 - hpack.hpack - DEBUG - Decoded 10, consumed 1 bytes
+2025-07-13 20:16:06,089 - hpack.hpack - DEBUG - Decoded 16, consumed 1 bytes
+2025-07-13 20:16:06,089 - hpack.hpack - DEBUG - Decoded (b'sb-project-ref', b'ktwemgwubqvnmmgrixdg'), total consumed 29 bytes, indexed True
+2025-07-13 20:16:06,089 - hpack.hpack - DEBUG - Decoded 16, consumed 1 bytes
+2025-07-13 20:16:06,090 - hpack.hpack - DEBUG - Decoded 5, consumed 1 bytes
+2025-07-13 20:16:06,090 - hpack.hpack - DEBUG - Decoded (b'x-content-type-options', b'nosniff'), total consumed 24 bytes, indexed True
+2025-07-13 20:16:06,090 - hpack.hpack - DEBUG - Decoded 15, consumed 1 bytes
+2025-07-13 20:16:06,090 - hpack.hpack - DEBUG - Decoded 1, consumed 1 bytes
+2025-07-13 20:16:06,090 - hpack.hpack - DEBUG - Decoded (b'x-envoy-attempt-count', <memory at 0x0000022857AD7AC0>), total consumed 19 bytes, indexed True
+2025-07-13 20:16:06,091 - hpack.hpack - DEBUG - Decoded 21, consumed 1 bytes
+2025-07-13 20:16:06,091 - hpack.hpack - DEBUG - Decoded 2, consumed 1 bytes
+2025-07-13 20:16:06,091 - hpack.hpack - DEBUG - Decoded (b'x-envoy-upstream-service-time', <memory at 0x0000022857AD7C40>), total consumed 26 bytes, indexed True
+2025-07-13 20:16:06,091 - hpack.hpack - DEBUG - Decoded 55, consumed 1 bytes
+2025-07-13 20:16:06,092 - hpack.hpack - DEBUG - Decoded 215, consumed 2 bytes
+2025-07-13 20:16:06,092 - hpack.hpack - DEBUG - Decoded (b'set-cookie', b'__cf_bm=LsRaQD6gBNbMcToBvhLO07az5eoRknHn_S36d5MdE5Y-1752426966-1.0.1.1-.yycNXeAR_6FRlNEixAR0KqKrZbSZWQrosdHUvN31vBCaAuHTYqq_BoUlILPIiSNumsYPjelzX0COzr_VrI3GMAyMKqharxuk4sG6C_O_yM; path=/; expires=Sun, 13-Jul-25 17:46:06 GMT; domain=.supabase.co; HttpOnly; Secure; SameSite=None'), total consumed 218 bytes, indexed True
+2025-07-13 20:16:06,092 - hpack.hpack - DEBUG - Decoded 54, consumed 1 bytes
+2025-07-13 20:16:06,092 - hpack.hpack - DEBUG - Decoded 7, consumed 1 bytes
+2025-07-13 20:16:06,093 - hpack.hpack - DEBUG - Decoded (b'server', b'cloudflare'), total consumed 9 bytes, indexed True
+2025-07-13 20:16:06,093 - hpack.hpack - DEBUG - Decoded 5, consumed 1 bytes
+2025-07-13 20:16:06,093 - hpack.hpack - DEBUG - Decoded 16, consumed 1 bytes
+2025-07-13 20:16:06,093 - hpack.hpack - DEBUG - Decoded (b'alt-svc', b'h3=":443"; ma=86400'), total consumed 24 bytes, indexed True
+2025-07-13 20:16:06,094 - httpcore.http2 - DEBUG - receive_response_headers.complete return_value=(201, [(b'date', b'Sun, 13 Jul 2025 17:16:06 GMT'), (b'content-type', b'application/json; charset=utf-8'), (b'content-range', b'*/*'), (b'cf-ray', b'95ea6d1849e173a5-JNB'), (b'cf-cache-status', b'DYNAMIC'), (b'content-encoding', b'gzip'), (b'strict-transport-security', b'max-age=31536000; includeSubDomains; preload'), (b'vary', b'Accept-Encoding'), (b'content-profile', b'public'), (b'preference-applied', b'return=representation'), (b'sb-gateway-version', b'1'), (b'sb-project-ref', b'ktwemgwubqvnmmgrixdg'), (b'x-content-type-options', b'nosniff'), (b'x-envoy-attempt-count', b'1'), (b'x-envoy-upstream-service-time', b'30'), (b'set-cookie', b'__cf_bm=LsRaQD6gBNbMcToBvhLO07az5eoRknHn_S36d5MdE5Y-1752426966-1.0.1.1-.yycNXeAR_6FRlNEixAR0KqKrZbSZWQrosdHUvN31vBCaAuHTYqq_BoUlILPIiSNumsYPjelzX0COzr_VrI3GMAyMKqharxuk4sG6C_O_yM; path=/; expires=Sun, 13-Jul-25 17:46:06 GMT; domain=.supabase.co; HttpOnly; Secure; SameSite=None'), (b'server', b'cloudflare'), (b'alt-svc', b'h3=":443"; ma=86400')])
+2025-07-13 20:16:06,095 - httpx - INFO - HTTP Request: POST https://ktwemgwubqvnmmgrixdg.supabase.co/rest/v1/profiles "HTTP/2 201 Created"
+2025-07-13 20:16:06,095 - httpcore.http2 - DEBUG - receive_response_body.started request=<Request [b'POST']> stream_id=1
+2025-07-13 20:16:06,096 - httpcore.http2 - DEBUG - receive_response_body.complete
+2025-07-13 20:16:06,096 - httpcore.http2 - DEBUG - response_closed.started stream_id=1
+2025-07-13 20:16:06,096 - httpcore.http2 - DEBUG - response_closed.complete
+2025-07-13 20:16:06,099 - app.services.auth_service - DEBUG - Profile inserted: {'user_id': '9a2797bb-83e0-46cf-b77d-6d9458497f35', 'email': 'arapbiisubmissions3@gmail.com', 'role': 'volunteer', 'location': 'New York'}
+2025-07-14 08:05:12,499 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:05:13,292 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:08:16,817 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:08:17,835 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:08:26,388 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:08:27,999 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:08:29,332 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:08:30,417 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:08:31,228 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 08:08:32,014 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 08:08:32,021 - fastapi - ERROR - Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2025-07-14 08:08:37,800 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:08:39,352 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:08:42,235 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:08:43,194 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:08:44,076 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 08:08:45,171 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 08:08:45,184 - fastapi - ERROR - Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2025-07-14 08:08:59,254 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:09:00,926 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:09:03,370 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:09:05,290 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:09:07,022 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 08:09:08,986 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 08:09:09,114 - fastapi - ERROR - Form data requires "python-multipart" to be installed. 
+You can install "python-multipart" with: 
+
+pip install python-multipart
+
+2025-07-14 08:19:45,012 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:19:46,216 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:19:47,398 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:19:48,589 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:19:49,661 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 08:19:51,215 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 08:20:32,194 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:20:33,373 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:20:34,577 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:20:35,354 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:20:36,150 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 08:20:37,181 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 08:20:44,092 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:20:45,064 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:20:46,121 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:20:46,970 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:20:48,325 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 08:20:50,198 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 08:21:01,882 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:21:04,667 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:21:07,227 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:21:09,131 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:21:10,318 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 08:21:11,162 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 08:21:18,425 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:21:19,204 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:21:20,165 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:21:20,975 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:21:21,817 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 08:21:22,617 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 08:22:00,549 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:22:02,158 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:22:03,708 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:22:04,960 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:22:06,674 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 08:22:08,012 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 08:37:43,217 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:37:44,242 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:37:45,357 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:37:46,200 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:37:47,016 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 08:37:47,907 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 08:37:54,315 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:37:55,135 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:37:55,943 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 08:37:55,944 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 08:37:55,944 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 08:38:01,253 - app.services.chat_service - INFO - LangChain QA chain initialized
+2025-07-14 08:40:02,046 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:40:03,711 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:40:05,151 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:40:06,567 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:40:09,139 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 08:40:10,579 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 08:40:22,110 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:40:23,153 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:40:24,131 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:40:24,961 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:40:25,776 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 08:40:26,620 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 08:40:46,572 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:40:47,582 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:40:48,510 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:40:49,275 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:40:50,430 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 08:40:51,357 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 08:42:11,266 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:42:12,164 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:42:13,182 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 08:42:13,967 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 08:42:15,066 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 08:42:16,094 - app.services.document_service - INFO - OpenAI client initialized
