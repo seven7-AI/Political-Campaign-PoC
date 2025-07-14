@@ -1,5 +1,5 @@
 import os
-from resend import Resend
+import resend
 from dotenv import load_dotenv
 import logging
 
@@ -17,22 +17,25 @@ logger = logging.getLogger(__name__)
 class EmailService:
     def __init__(self):
         load_dotenv()
-        self.client = Resend(api_key=os.getenv("RESEND_API_KEY"))
-        if not self.client.api_key:
+        resend_api_key = os.getenv("RESEND_API_KEY")
+        if not resend_api_key:
             logger.error("RESEND_API_KEY not set")
             raise ValueError("Resend API key missing")
+
+        # Set the API key for the resend module
+        resend.api_key = resend_api_key
         logger.info("Resend client initialized")
 
     async def send_notification(self, to_email: str, subject: str, message: str):
         try:
             email = os.getenv("EMAIL")
-            email_data = {
+            params = {
                 "from": email,  # Replace with your verified domain
-                "to": to_email,
+                "to": [to_email],
                 "subject": subject,
                 "html": f"<p>{message}</p>"
             }
-            response = self.client.emails.send(email_data)
+            response = resend.Emails.send(params)
             logger.info(f"Sent email to {to_email}: {response}")
             return response
         except Exception as e:

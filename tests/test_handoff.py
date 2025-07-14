@@ -21,8 +21,8 @@ WS_BASE_URL = "ws://localhost:8000"
 
 # User credentials (replace with existing user)
 USER_CREDENTIALS = {
-    "email": "volunteer_test_8478b3ba@mailinator.com",
-    "password": "SecurePass123!"
+    "email": os.getenv(USER_EMAIL),
+    "password": os.getenv(USER_PASSWORD)
 }
 
 # Test messages

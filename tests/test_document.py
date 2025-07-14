@@ -18,8 +18,8 @@ BASE_URL = "http://localhost:8000"
 
 # Admin credentials (replace with an existing admin user)
 ADMIN_CREDENTIALS = {
-    "email": "admin@example.com",  # Use an admin email from Supabase
-    "password": "SecurePass123!"   # Use the correct password
+    "email": os.getenv(ADMIN_EMAIL),
+    "password": os.getenv(ADMIN_PASSWORD)
 }
 
 # Path to test PDF

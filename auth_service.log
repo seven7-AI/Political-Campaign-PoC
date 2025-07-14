@@ -6188,3 +6188,57 @@ pip install python-multipart
 2025-07-14 08:42:13,967 - app.services.auth_service - INFO - OpenAI client initialized
 2025-07-14 08:42:15,066 - app.services.document_service - INFO - Supabase client initialized
 2025-07-14 08:42:16,094 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 09:14:43,152 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:14:44,222 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:14:45,700 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:14:46,723 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:14:47,789 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 09:14:48,806 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 09:15:52,362 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:15:54,545 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:15:56,527 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:15:57,799 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:15:58,854 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 09:16:00,015 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 09:16:10,132 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:16:10,918 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:16:11,868 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 09:16:11,869 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 09:16:11,869 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 09:16:16,010 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-07-14 09:16:21,142 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:16:22,325 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:16:23,477 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:16:24,260 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:16:25,016 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 09:16:25,781 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 09:16:29,857 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:16:30,601 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:16:31,376 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 09:16:31,377 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 09:16:31,377 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 09:16:35,086 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-07-14 09:17:00,410 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:17:01,146 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:17:02,119 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:17:02,871 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:17:03,567 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 09:17:04,292 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 09:17:08,314 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:17:09,029 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:17:09,748 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 09:17:09,749 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 09:17:09,749 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 09:17:13,214 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-07-14 09:18:44,385 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:18:45,210 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:18:46,129 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:18:46,885 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:18:47,717 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 09:18:48,825 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 09:23:29,566 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:23:30,607 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:23:31,906 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:23:33,383 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:23:34,353 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 09:23:35,148 - app.services.document_service - INFO - OpenAI client initialized

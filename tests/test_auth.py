@@ -30,8 +30,8 @@ supabase: Client = create_client(supabase_url, supabase_service_key)
 
 # Sample user data (use mailinator.com for deliverable email)
 USER_DATA = {
-    "email": f"arapbiisubmissions3@gmail.com",
-    "password": "SecurePass123!",
+    "email": os.getenv(VOLUNTEER_EMAIL),
+    "password": os.getenv(VOLUNTEER_PASSWORD),
     "role": "volunteer",
     "location": "New York"
 }

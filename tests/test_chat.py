@@ -21,8 +21,8 @@ WS_BASE_URL = "ws://localhost:8000"
 
 # Admin credentials (replace with existing admin user)
 ADMIN_CREDENTIALS = {
-    "email": "admin@example.com",
-    "password": "SecurePass123!"
+    "email": os.getenv(ADMIN_EMAIL),
+    "password": os.getenv(ADMIN_PASSWORD)
 }
 
 # Test messages
