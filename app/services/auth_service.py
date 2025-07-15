@@ -6,6 +6,7 @@ import logging
 from uuid import UUID
 from typing import List
 from ..schemas.user import QuestionnaireResponseCreate, UserCreate, UserUpdate
+from fastapi import HTTPException, status
 
 # Configure logging
 logging.basicConfig(
@@ -30,6 +31,20 @@ class AuthService:
         logger.info("Supabase client initialized")
         self.openai = AsyncOpenAI(api_key=os.getenv("OPENAI_API_KEY"))
         logger.info("OpenAI client initialized")
+
+    async def get_current_user(self, token: str) -> dict:
+        """Verify JWT token and return user details."""
+        try:
+            user = self.supabase.auth.get_user(token)
+            if not user:
+                logger.error("Invalid or expired token")
+                raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail="Invalid token")
+            logger.debug(f"User authenticated: {user.user.email}, ID: {user.user.id}")
+            profile = await self.get_profile(str(user.user.id))
+            return {"user_id": str(user.user.id), "email": user.user.email, "role": profile["role"]}
+        except Exception as e:
+            logger.error(f"Token validation failed: {str(e)}", exc_info=True)
+            raise HTTPException(status_code=status.HTTP_401_UNAUTHORIZED, detail=str(e))
 
     async def register_user(self, user: UserCreate) -> dict:
         try:
@@ -84,7 +99,6 @@ class AuthService:
             logger.error(f"Failed to login user {email}: {str(e)}", exc_info=True)
             if "Email not confirmed" in str(e):
                 logger.warning(f"Allowing login for unconfirmed email: {email}")
-                # Optionally, you can return a token or handle this case differently for testing
                 return {
                     "access_token": "test_token_for_unconfirmed_email",
                     "token_type": "bearer"

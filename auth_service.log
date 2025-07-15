@@ -6242,3 +6242,134 @@ pip install python-multipart
 2025-07-14 09:23:33,383 - app.services.auth_service - INFO - OpenAI client initialized
 2025-07-14 09:23:34,353 - app.services.document_service - INFO - Supabase client initialized
 2025-07-14 09:23:35,148 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 09:25:19,207 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:25:19,914 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:25:20,761 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:25:21,534 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:25:22,475 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 09:25:23,405 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 09:25:27,331 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 09:25:28,040 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 09:25:28,760 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 09:25:28,761 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 09:25:28,762 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 09:25:32,337 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 09:25:32,338 - app.services.chat_service - INFO - LangChain QA chain and email service initialized
+2025-07-14 12:00:00,279 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 12:00:03,022 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 12:00:07,564 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 12:00:11,359 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 12:00:14,799 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 12:00:14,885 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 12:00:14,922 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 12:00:28,019 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:00:28,061 - app.services.chat_service - INFO - LangChain QA chain and email service initialized
+2025-07-14 12:00:28,099 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:00:29,458 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-07-14 12:00:50,628 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 12:00:52,027 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 12:00:53,637 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 12:00:55,021 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 12:00:56,438 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 12:00:56,446 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 12:00:56,507 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 12:01:03,747 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:01:03,788 - app.services.chat_service - INFO - LangChain QA chain and email service initialized
+2025-07-14 12:01:03,813 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:01:04,678 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-07-14 12:02:04,455 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 12:02:05,597 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 12:02:06,786 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 12:02:08,210 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 12:02:09,445 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 12:02:09,453 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 12:02:09,459 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 12:02:16,360 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:02:16,360 - app.services.chat_service - INFO - LangChain QA chain and email service initialized
+2025-07-14 12:02:16,365 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:02:17,024 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-07-14 12:08:38,809 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 12:08:40,473 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 12:08:42,757 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 12:08:44,812 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 12:08:46,722 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 12:08:46,746 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 12:08:46,782 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 12:08:55,694 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:08:55,709 - app.services.chat_service - INFO - LangChain QA chain and email service initialized
+2025-07-14 12:08:55,800 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:08:57,678 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-07-14 12:14:39,107 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 12:14:40,745 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 12:14:42,375 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 12:14:44,299 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 12:14:45,852 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 12:14:45,861 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 12:14:45,907 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 12:14:54,519 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:14:54,534 - app.services.chat_service - INFO - LangChain QA chain and email service initialized
+2025-07-14 12:14:54,620 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:14:56,342 - neo4j.pool - DEBUG - [#0000]  _: <POOL> close
+2025-07-14 12:15:50,456 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 12:15:52,434 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 12:15:55,842 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 12:15:59,217 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 12:16:02,033 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 12:16:05,301 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 12:16:10,592 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 12:16:10,911 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 12:16:10,912 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 12:16:32,539 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:16:32,560 - app.services.chat_service - INFO - LangChain QA chain and email service initialized
+2025-07-14 12:16:34,755 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 12:16:37,089 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 12:16:39,254 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 12:16:41,427 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 12:16:43,121 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 12:16:43,147 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 12:16:43,183 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 12:16:45,690 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:16:45,693 - app.services.chat_service - INFO - LangChain QA chain and email service initialized
+2025-07-14 12:16:45,699 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:17:11,140 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 12:17:12,512 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 12:17:13,887 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 12:17:15,176 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 12:17:16,767 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 12:17:18,781 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 12:17:21,025 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 12:17:21,091 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 12:17:21,152 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 12:17:30,247 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:17:30,275 - app.services.chat_service - INFO - LangChain QA chain and email service initialized
+2025-07-14 12:17:31,766 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 12:17:33,135 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 12:17:34,460 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 12:17:35,831 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 12:17:37,383 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 12:17:37,495 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 12:17:37,549 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 12:17:40,493 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:17:40,500 - app.services.chat_service - INFO - LangChain QA chain and email service initialized
+2025-07-14 12:17:40,589 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:20:23,942 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 12:20:25,257 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 12:20:26,450 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 12:20:27,665 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 12:20:28,795 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 12:20:29,917 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 12:20:31,019 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 12:20:31,037 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 12:20:31,043 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 12:20:37,479 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:20:37,530 - app.services.chat_service - INFO - LangChain QA chain and email service initialized
+2025-07-14 12:20:39,015 - app.services.auth_service - INFO - Supabase client initialized
+2025-07-14 12:20:40,184 - app.services.auth_service - INFO - OpenAI client initialized
+2025-07-14 12:20:41,366 - app.services.document_service - INFO - Supabase client initialized
+2025-07-14 12:20:42,758 - app.services.document_service - INFO - OpenAI client initialized
+2025-07-14 12:20:44,221 - app.services.chat_service - INFO - Supabase client initialized
+2025-07-14 12:20:44,232 - neo4j.pool - DEBUG - [#0000]  _: <POOL> created, direct address IPv4Address(('localhost', 7687))
+2025-07-14 12:20:44,233 - app.services.chat_service - INFO - Neo4j driver initialized
+2025-07-14 12:20:46,356 - app.services.email_service - INFO - Resend client initialized
+2025-07-14 12:20:46,364 - app.services.chat_service - INFO - LangChain QA chain and email service initialized
+2025-07-14 12:20:46,369 - app.services.email_service - INFO - Resend client initialized

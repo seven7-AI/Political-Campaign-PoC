@@ -2,9 +2,8 @@ import requests
 import logging
 import json
 from uuid import uuid4
-from supabase import create_client, Client
-import os
 from dotenv import load_dotenv
+import os
 
 # Configure logging
 logging.basicConfig(
@@ -19,26 +18,27 @@ logger = logging.getLogger(__name__)
 
 # Load environment variables
 load_dotenv()
+ADMIN_EMAIL = os.getenv("ADMIN_EMAIL")
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD")
+USER_EMAIL = os.getenv("USER_EMAIL")
+USER_PASSWORD = os.getenv("USER_PASSWORD")
+VOLUNTEER_EMAIL = os.getenv("VOLUNTEER_EMAIL")
+VOLUNTEER_PASSWORD = os.getenv("VOLUNTEER_PASSWORD")
 
 # Base URL for FastAPI server
 BASE_URL = "http://localhost:8000"
 
-# Initialize Supabase client with service key
-supabase_url = os.getenv("SUPABASE_URL")
-supabase_service_key = os.getenv("SUPABASE_SERVICE_KEY")  # Use service key instead of anon key
-supabase: Client = create_client(supabase_url, supabase_service_key)
-
-# Sample user data (use mailinator.com for deliverable email)
+# Sample user data
 USER_DATA = {
-    "email": os.getenv(VOLUNTEER_EMAIL),
-    "password": os.getenv(VOLUNTEER_PASSWORD),
+    "email": VOLUNTEER_EMAIL,
+    "password": VOLUNTEER_PASSWORD,
     "role": "volunteer",
-    "location": "New York"
+    "location": "Boston"
 }
 
 # Sample profile update data
 UPDATE_DATA = {
-    "location": "Boston"
+    "location": "New York"
 }
 
 # Sample questionnaire responses
@@ -50,37 +50,13 @@ QUESTIONNAIRE_DATA = [
     {"question_id": 5, "answer": "I’m motivated by social justice and community impact."}
 ]
 
-def confirm_email(email: str):
-    """Confirm the user's email using Supabase admin client."""
-    try:
-        # Use the Supabase client to invite the user, which might confirm the email
-        response = supabase.auth.admin.invite_user_by_email(email)
-        logger.info(f"Invitation sent to confirm email for {email}: {response}")
-    except Exception as e:
-        logger.error(f"Failed to confirm email {email}: {str(e)}", exc_info=True)
-        raise
-
-import re
-
-def is_valid_email(email):
-    """Check if the email address is valid."""
-    pattern = r'^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$'
-    return re.match(pattern, email) is not None
-
 def test_register():
     """Test POST /auth/register"""
     try:
-        if not is_valid_email(USER_DATA["email"]):
-            raise ValueError(f"Invalid email format: {USER_DATA['email']}")
-
         logger.debug(f"Sending POST /auth/register with payload: {json.dumps(USER_DATA, indent=2)}")
         response = requests.post(f"{BASE_URL}/auth/register", json=USER_DATA)
         logger.info(f"POST /auth/register - Status: {response.status_code}, Headers: {response.headers}, Response: {response.text}")
         response.raise_for_status()
-
-        # Confirm the user's email after registration
-        confirm_email(USER_DATA["email"])
-
         return response.json()
     except Exception as e:
         logger.error(f"POST /auth/register failed: {str(e)}", exc_info=True)
@@ -93,13 +69,8 @@ def test_login():
         logger.debug(f"Sending POST /auth/login with payload: {json.dumps(login_data, indent=2)}")
         response = requests.post(f"{BASE_URL}/auth/login", json=login_data)
         logger.info(f"POST /auth/login - Status: {response.status_code}, Headers: {response.headers}, Response: {response.text}")
-
-        # Ensure the response contains a valid token
-        response_data = response.json()
-        if "access_token" not in response_data:
-            raise ValueError("Login failed: No access token in response")
-
-        return response_data
+        response.raise_for_status()
+        return response.json()
     except Exception as e:
         logger.error(f"POST /auth/login failed: {str(e)}", exc_info=True)
         raise

@@ -1,6 +1,7 @@
 import requests
 import logging
 import os
+from dotenv import load_dotenv
 
 # Configure logging
 logging.basicConfig(
@@ -13,13 +14,18 @@ logging.basicConfig(
 )
 logger = logging.getLogger(__name__)
 
+# Load environment variables
+load_dotenv()
+ADMIN_EMAIL = os.getenv("ADMIN_EMAIL")
+ADMIN_PASSWORD = os.getenv("ADMIN_PASSWORD")
+
 # Base URL for FastAPI server
 BASE_URL = "http://localhost:8000"
 
-# Admin credentials (replace with an existing admin user)
+# Admin credentials
 ADMIN_CREDENTIALS = {
-    "email": os.getenv(ADMIN_EMAIL),
-    "password": os.getenv(ADMIN_PASSWORD)
+    "email": ADMIN_EMAIL,
+    "password": ADMIN_PASSWORD
 }
 
 # Path to test PDF
